@@ -1,0 +1,274 @@
+{
+    "Stamp": "2019-03-21 15:27:55",
+    "DeleteObsolete": false,
+    "MySQL": {
+        "Table": {
+            "TABLE_SCHEMA": "global",
+            "TABLE_NAME": "customer_global",
+            "ENGINE": "InnoDB",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_COLLATION": "utf8_general_ci",
+            "TABLE_COMMENT": ""
+        },
+        "Column": {
+            "id": {
+                "ORDINAL_POSITION": 1,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "auto_increment",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "name": {
+                "ORDINAL_POSITION": 2,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "app_id": {
+                "ORDINAL_POSITION": 3,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "aplikace, ze ktere byl zakaznik puvodne vytvoren",
+                "GENERATION_EXPRESSION": ""
+            },
+            "app_customer_id": {
+                "ORDINAL_POSITION": 4,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "id zakaznika v aplikaci, ze ktere byl vytvoren",
+                "GENERATION_EXPRESSION": ""
+            },
+            "firm_db_id": {
+                "ORDINAL_POSITION": 5,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "Vazba na firmu",
+                "GENERATION_EXPRESSION": ""
+            },
+            "id_number": {
+                "ORDINAL_POSITION": 6,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "I\u010c firem, kter\u00e9 jsme nena\u0161li v na\u0161\u00ed db",
+                "GENERATION_EXPRESSION": ""
+            },
+            "address_country_id": {
+                "ORDINAL_POSITION": 7,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "date_added": {
+                "ORDINAL_POSITION": 8,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "datetime",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": 0,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "datetime",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "date_modified": {
+                "ORDINAL_POSITION": 9,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "datetime",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": 0,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "datetime",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "storage_capacity": {
+                "ORDINAL_POSITION": 10,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "Kapacita datov\u00e9ho \u00falo\u017ei\u0161t\u011b v MB",
+                "GENERATION_EXPRESSION": ""
+            }
+        },
+        "Index": {
+            "app_customer_id": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "app_customer_id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "app_id": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "app_id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "date_added": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "date_added",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "date_modified": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "date_modified",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "id_number": {
+                "1": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "id_number",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                },
+                "2": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "address_country_id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "name": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "name",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "PRIMARY": {
+                "1": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            }
+        },
+        "IndexFk": []
+    },
+    "Data": []
+}

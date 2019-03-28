@@ -1,0 +1,29 @@
+{
+	"name": "readyphp/account",
+	"description": "Application user account",
+	"license": "MIT",
+	"config": {
+		"discard-changes": true
+	},
+	"require": {
+		"php-64bit": ">=7.1",
+		"readyphp/common": "dev-master",
+		"readyphp/entity": "dev-master",
+		"readyphp/general": "dev-master",
+		"readyphp/lang": "dev-master",
+		"readyphp/logger": "dev-master"
+	},
+	"repositories": [
+		{
+			"type": "github",
+			"url": "https://github.com/paveldvorak5/"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"ReadyPhp\\Account\\": "src"
+		}
+	},
+	"scripts": {
+	}
+}

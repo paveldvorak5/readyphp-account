@@ -1,0 +1,195 @@
+{
+    "Stamp": "2018-12-12 14:23:51",
+    "DeleteObsolete": false,
+    "MySQL": {
+        "Table": {
+            "TABLE_SCHEMA": "global",
+            "TABLE_NAME": "login_log",
+            "ENGINE": "InnoDB",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_COLLATION": "utf8_bin",
+            "TABLE_COMMENT": ""
+        },
+        "Column": {
+            "id": {
+                "ORDINAL_POSITION": 1,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "auto_increment",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "app_id": {
+                "ORDINAL_POSITION": 2,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "error_message": {
+                "ORDINAL_POSITION": 3,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "text",
+                "CHARACTER_MAXIMUM_LENGTH": 65535,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "text",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "request_date": {
+                "ORDINAL_POSITION": 4,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "datetime",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": 0,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "datetime",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "ip": {
+                "ORDINAL_POSITION": 5,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "allowed": {
+                "ORDINAL_POSITION": 6,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "tinyint",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 3,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "tinyint(1)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "user_global_id": {
+                "ORDINAL_POSITION": 7,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "hostname": {
+                "ORDINAL_POSITION": 8,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 100,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_bin",
+                "COLUMN_TYPE": "varchar(100)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            }
+        },
+        "Index": {
+            "PRIMARY": {
+                "1": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "request_date": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "request_date",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "user_global_id": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "user_global_id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            }
+        },
+        "IndexFk": {
+            "login_log_ibfk_1": {
+                "0": {
+                    "COLUMN_NAME": "user_global_id",
+                    "REFERENCED_TABLE_SCHEMA": null,
+                    "REFERENCED_TABLE_NAME": "user_global",
+                    "REFERENCED_COLUMN_NAME": "id"
+                },
+                "UPDATE_RULE": "CASCADE",
+                "DELETE_RULE": "CASCADE"
+            }
+        }
+    },
+    "Data": []
+}

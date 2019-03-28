@@ -1,0 +1,500 @@
+{
+    "Stamp": "2019-03-21 15:27:54",
+    "DeleteObsolete": false,
+    "MySQL": {
+        "Table": {
+            "TABLE_SCHEMA": "global",
+            "TABLE_NAME": "user_global",
+            "ENGINE": "InnoDB",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_COLLATION": "utf8_general_ci",
+            "TABLE_COMMENT": "Glob\u00e1ln\u00ed u\u017eivatel\u00e9 (pro v\u0161echny projekty)"
+        },
+        "Column": {
+            "id": {
+                "ORDINAL_POSITION": 1,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "auto_increment",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "customer_global_id": {
+                "ORDINAL_POSITION": 2,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11) unsigned",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "login": {
+                "ORDINAL_POSITION": 3,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_czech_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "prihlasovaci jmeno",
+                "GENERATION_EXPRESSION": ""
+            },
+            "password": {
+                "ORDINAL_POSITION": 4,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "first_name": {
+                "ORDINAL_POSITION": 5,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "last_name": {
+                "ORDINAL_POSITION": 6,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "disabled": {
+                "ORDINAL_POSITION": 7,
+                "COLUMN_DEFAULT": "0",
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "tinyint",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 3,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "tinyint(1)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "blokovane prihlaseni",
+                "GENERATION_EXPRESSION": ""
+            },
+            "ban_reason": {
+                "ORDINAL_POSITION": 8,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "enum",
+                "CHARACTER_MAXIMUM_LENGTH": 8,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "ascii",
+                "COLLATION_NAME": "ascii_general_ci",
+                "COLUMN_TYPE": "enum('security','debt')",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "active": {
+                "ORDINAL_POSITION": 9,
+                "COLUMN_DEFAULT": "1",
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "tinyint",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 3,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "tinyint(1)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "neni smazany = 1",
+                "GENERATION_EXPRESSION": ""
+            },
+            "login_code": {
+                "ORDINAL_POSITION": 10,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 64,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "ascii",
+                "COLLATION_NAME": "ascii_general_ci",
+                "COLUMN_TYPE": "varchar(64)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "kod pro auto login",
+                "GENERATION_EXPRESSION": ""
+            },
+            "system": {
+                "ORDINAL_POSITION": 11,
+                "COLUMN_DEFAULT": "0",
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "tinyint",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 3,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "tinyint(4)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "record can't be alterd",
+                "GENERATION_EXPRESSION": ""
+            },
+            "email": {
+                "ORDINAL_POSITION": 12,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 255,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "utf8",
+                "COLLATION_NAME": "utf8_general_ci",
+                "COLUMN_TYPE": "varchar(255)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "email uzivatele",
+                "GENERATION_EXPRESSION": ""
+            },
+            "last_ip": {
+                "ORDINAL_POSITION": 13,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 15,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "ascii",
+                "COLLATION_NAME": "ascii_general_ci",
+                "COLUMN_TYPE": "varchar(15)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "posledni ip adresa",
+                "GENERATION_EXPRESSION": ""
+            },
+            "last_time": {
+                "ORDINAL_POSITION": 14,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "datetime",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": 0,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "datetime",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "force_password_change": {
+                "ORDINAL_POSITION": 15,
+                "COLUMN_DEFAULT": "0",
+                "IS_NULLABLE": "NO",
+                "DATA_TYPE": "tinyint",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 3,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "tinyint(4)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "zmenit heslo",
+                "GENERATION_EXPRESSION": ""
+            },
+            "password_salt": {
+                "ORDINAL_POSITION": 16,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 20,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "ascii",
+                "COLLATION_NAME": "ascii_general_ci",
+                "COLUMN_TYPE": "varchar(20)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "uid": {
+                "ORDINAL_POSITION": 17,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "varchar",
+                "CHARACTER_MAXIMUM_LENGTH": 8,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": "ascii",
+                "COLLATION_NAME": "ascii_general_ci",
+                "COLUMN_TYPE": "varchar(8)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "date_added": {
+                "ORDINAL_POSITION": 18,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "datetime",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": 0,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "datetime",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "date_modified": {
+                "ORDINAL_POSITION": 19,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "datetime",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": 0,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "datetime",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "tracking_user_id": {
+                "ORDINAL_POSITION": 20,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "int",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": 10,
+                "NUMERIC_SCALE": 0,
+                "DATETIME_PRECISION": null,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "int(11)",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "",
+                "GENERATION_EXPRESSION": ""
+            },
+            "gdpr_accept_date": {
+                "ORDINAL_POSITION": 21,
+                "COLUMN_DEFAULT": null,
+                "IS_NULLABLE": "YES",
+                "DATA_TYPE": "datetime",
+                "CHARACTER_MAXIMUM_LENGTH": null,
+                "NUMERIC_PRECISION": null,
+                "NUMERIC_SCALE": null,
+                "DATETIME_PRECISION": 0,
+                "CHARACTER_SET_NAME": null,
+                "COLLATION_NAME": null,
+                "COLUMN_TYPE": "datetime",
+                "EXTRA": "",
+                "COLUMN_COMMENT": "Datum ud\u011blen\u00ed souhlasu",
+                "GENERATION_EXPRESSION": ""
+            }
+        },
+        "Index": {
+            "customer_global_id": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "customer_global_id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "date_added": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "date_added",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "date_modified": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "date_modified",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "email": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "email",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "first_name": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "first_name",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "last_name": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "last_name",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "last_time": {
+                "1": {
+                    "NON_UNIQUE": 1,
+                    "COLUMN_NAME": "last_time",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "login": {
+                "1": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "login",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "login_code": {
+                "1": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "login_code",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "PRIMARY": {
+                "1": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "id",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            },
+            "uid": {
+                "1": {
+                    "NON_UNIQUE": 0,
+                    "COLUMN_NAME": "uid",
+                    "COLLATION": "A",
+                    "SUB_PART": null,
+                    "NULLABLE": "YES",
+                    "INDEX_TYPE": "BTREE",
+                    "COMMENT": "",
+                    "INDEX_COMMENT": ""
+                }
+            }
+        },
+        "IndexFk": {
+            "user_global_ibfk_1": {
+                "0": {
+                    "COLUMN_NAME": "customer_global_id",
+                    "REFERENCED_TABLE_SCHEMA": null,
+                    "REFERENCED_TABLE_NAME": "customer_global",
+                    "REFERENCED_COLUMN_NAME": "id"
+                },
+                "UPDATE_RULE": "CASCADE",
+                "DELETE_RULE": "CASCADE"
+            }
+        },
+        "DataUniqueColumn": null
+    },
+    "Data": []
+}
